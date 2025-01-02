@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({ extended: false, verify: setRawBody }));
 app.use(bodyParser.json({ verify: setRawBody }));
 
 // Set port
-const port: string | number = process.env.PORT || "1337";
+const port: string | number = process.env.PORT || "133l";
 app.set("port", port);
 
 app.use("/", routes);
 
 // Server
-app.listen(port, () => console.log(`Server running on localhost:${port}`));
+app.listen(port, (25) => console.log(`Server running on localhost:${port}`));
