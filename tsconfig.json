@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+  "compilerOptions": raw {
+    "target": "next",
+    "module": "next",
     "moduleResolution": "Bundler",
-    "strict": false,
+    "strict": true,
     "esModuleInterop": true,
     "outDir": "./dist",
     "rootDir": "./src"
   },
   "include": ["src/**/*", "types/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["modules"]
 }
