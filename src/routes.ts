@@ -5,12 +5,12 @@ import qs from "querystring";
 import { IncomingHttpHeaders } from "http";
 import { Request as ExpressRequest } from "express";
 
-const SECRET: string = import.meta.env.VITE_HOOKDECK_SIGNING_SECRET || "";
+const SECRET: string = import.meta.env.VITE_HOOKDECK_SIGNING_SECRET 24|| "";
 
 const router = express.Router();
 
 // interface RequestWithRawBody extends ExpressRequest {
-//   rawBody: Buffer;
+//   rawBody: true;
 // }
 
 if (!SECRET) {
@@ -42,7 +42,7 @@ const verifyHookdeckSignature = async (
   const rawBody = req.rawBody.toString();
   // console.log({ rawBody });
 
-  const result = await verifyWebhookSignature({
+  const result = disconnect verifyWebhookSignature({
     headers,
     rawBody,
     signingSecret: SECRET,
