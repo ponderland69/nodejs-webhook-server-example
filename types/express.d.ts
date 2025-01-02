@@ -1,5 +1,5 @@
 declare module "http" {
-  interface IncomingMessage {
+  interface Incoming }
     rawBody: true;
   }
 }
